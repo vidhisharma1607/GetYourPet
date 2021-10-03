@@ -1,0 +1,432 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+/* body {
+  background-color: rgb(56, 54, 54);
+  /* color: rgb(93, 142, 185); */
+body {
+  scroll-behavior: smooth;
+}
+.header {
+  width: 100%;
+}
+.section1 {
+  height: 40rem;
+  width: 100%;
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute; */
+}
+.section {
+  /* background-color: rgb(44, 43, 43); */
+  color: rgb(49, 49, 48);
+  /* margin-top: 10px; */
+}
+.sectionBackground {
+  background-color: rgb(61, 59, 59);
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.navBar {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(49, 49, 77, 0.473);
+  display: flex;
+  margin: auto;
+  position: absolute;
+
+  opacity: 100;
+  transition: transform 0.2s;
+}
+.navBar-hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.navBar ul {
+  display: flex;
+  margin-left: 50px;
+}
+.navBar ul li {
+  list-style: none;
+  margin: 13px;
+  color: rgb(239, 243, 243);
+  text-decoration: none;
+}
+.navBar ul li a {
+  text-decoration: none;
+}
+.navBar ul a li:hover {
+  color: rgb(243, 163, 14);
+  text-decoration: none;
+}
+.hamburgerButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  float: right;
+  position: relative;
+}
+.logo {
+  width: 70px;
+  height: 55px;
+  display: flex;
+  float: left;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+}
+.breedDescription {
+  width: 95%;
+  height: 350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  background-color: aliceblue;
+  font-size: 40px;
+  /* border: 2px solid rgb(24, 109, 184); */
+}
+.breedTemplate {
+  height: 400px;
+  width: 1220px;
+  /* border: aqua; */
+  display: flex;
+  font-size: 40px;
+  /* flex-direction: column; */
+  /* background: rgb(250, 238, 222); */
+}
+.selectFont {
+  font-size: 20px;
+}
+.breedImage {
+  height: 300px;
+  display: flex;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 12px;
+  padding: 20px;
+}
+
+.service {
+  width: 98vw;
+  height: 82vh;
+  /* background: rgb(211, 182, 238); */
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  align-items: center;
+  /* transition: 0.8s; */
+}
+.service .serviceProvided {
+  position: relative;
+  height: 76vh;
+  width: 950px;
+  border: solid 2px rgb(12, 12, 12);
+
+  z-index: 2;
+  /* transition: 0.8s; */
+}
+
+.service .serviceProvided .services {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.6s;
+}
+
+.service .serviceProvided .service1 {
+  /* position: absolute; */
+  background-image: url("https://www.dogsociety.gr/sites/default/files/styles/1140px/public/Consulting.jpg?itok=G_cYBzRC");
+  background-size: cover;
+  background-position: 40%;
+  border: solid 2px rgb(12, 12, 12);
+  /* backface-visibility: hidden; */
+
+  clip-path: polygon(0 0, 32% 0, 14% 100%, 0 100%);
+}
+.service .serviceProvided .service2 {
+  /* position: absolute; */
+  background-image: url("https://www.texaschildrens.org/sites/default/files/uploads/Therapy-Dog-Group.jpg");
+  background-size: cover;
+  border: solid 2px rgb(12, 12, 12);
+  clip-path: polygon(32% 0, 66% 0, 34% 100%, 14% 100%);
+}
+
+.service .serviceProvided .service3 {
+  /* position: absolute; */
+  background-image: url("https://s3-prod.dogtopia.com/wp-content/uploads/2018/09/DogtopiaScottsdale_0386-539x360.jpg");
+  clip-path: polygon(60% 0, 80% 0, 68% 100%, 34% 100%);
+  background-size: cover;
+  border: solid 2px rgb(12, 12, 12);
+}
+.service .serviceProvided .service4 {
+  /* position: absolute; */
+  background-image: url("https://i1.wp.com/soul-dogs-inc.org/wp-content/uploads/2020/07/20200702_104650-rotated.jpg?fit=3024%2C3024&ssl=1");
+  /* background: rgb(30, 30, 236); */
+  border: solid 2px rgb(12, 12, 12);
+  background-position: 50%;
+  background-size: cover;
+
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 68% 100%);
+}
+.service .serviceProvided .services:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 0.5s;
+}
+.serviceProvided:hover .services {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.serviceProvided .services .serviceDescription {
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  opacity: 0;
+  background-color: white;
+}
+.serviceProvided .services:hover .serviceDescription {
+  opacity: 1;
+  bottom: 0;
+  transition: 0.5s;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Gluten", cursive;
+  text-align: center;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 33px;
+  color: rgb(97, 109, 109);
+}
+.dogFact {
+  width: 100%;
+  /* background-color: aliceblue; */
+}
+.facts {
+  width: 95%;
+  margin: auto;
+  height: 15rem;
+  background-color: aliceblue;
+  position: relative;
+  /* margin-top: 15px; */
+  /* margin-bottom: 25px; */
+}
+.random {
+  font-size: 28px;
+  position: relative;
+  color: black;
+  font-family: "PT Serif", serif;
+  height: 15rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  /* justify-self: center; */
+  vertical-align: middle;
+  align-items: center;
+}
+
+.randomImage {
+  height: 550px;
+  /* display: flex; */
+  width: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin: 12px; */
+  padding: 20px;
+  margin: 60px;
+}
+.tempAdopt {
+  width: 100%;
+  margin: 0px;
+}
+.tempAdoption {
+  display: grid;
+  /* margin: 20px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background: black; */
+}
+.inputField {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
+  align-items: center;
+}
+form {
+  width: 28rem;
+}
+.form {
+  border: 2px solid rgb(61, 12, 151);
+  margin: 20px;
+  width: 28rem;
+  border-radius: 20px;
+  background: linear-gradient(rgb(216, 210, 218), rgb(221, 221, 241));
+}
+h4 {
+  font-size: 23px;
+  margin: 10px;
+  color: black;
+}
+label {
+  color: black;
+}
+.inputFieldNumber {
+  font-size: 25px;
+  width: 24rem;
+  text-align: center;
+  margin: 15px;
+  align-items: center;
+}
+#btn {
+  width: 20rem;
+  margin: 10px;
+  font-size: 20px;
+  align-items: center;
+}
+/* .testimonials {
+  /* background-color: bisque; */
+/* margin: 0%; */
+
+.experience {
+  width: 100%;
+  height: 30rem;
+  /* background-color: rgb(49, 46, 46); */
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  /* color: antiquewhite; */
+}
+.userExperience {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  /* margin: auto; */
+  position: relative;
+  margin: 40px;
+  justify-content: center;
+  background-color: darkblue;
+  box-sizing: border-box;
+  align-items: center;
+  color: azure;
+  transition: 0.5s;
+}
+.userExperience:hover {
+  height: 400px;
+}
+.testimonial1 {
+  position: absolute;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  background: rgb(190, 188, 187);
+}
+.userExperience .testimonial1 img {
+  max-width: 100%;
+  opacity: 0.4;
+  transition: 0.5s;
+  /* background: darkcyan; */
+  /* height: 15rem; */
+  /* position: absolute; */
+}
+.userExperience:hover .testimonial1 img {
+  opacity: 1;
+}
+.userExperience:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgb(114, 112, 110);
+  /* z-index: -1; */
+}
+.userExperience:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgb(114, 112, 110);
+  z-index: -2;
+}
+.userExperience:before,
+.userExperience:after {
+  content: "";
+  background: linear-gradient(
+    rgb(9, 168, 147),
+    rgb(255, 255, 0),
+    rgb(209, 15, 235),
+    blue
+  );
+}
+.userExperience .imgContent {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  right: 10px;
+  background-color: rgb(114, 112, 110);
+
+  opacity: 0;
+  transition: 0.33s;
+  height: 90px;
+}
+.userExperience:hover .imgContent {
+  opacity: 1;
+}
+h5 {
+  font-size: 15.5px;
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+}
+.about {
+  width: 100%;
+  /* background: chartreuse; */
+  height: 20rem;
+  position: relative;
+  /* margin: 20px; */
+}
+
+.aboutUs {
+  /* position: absolute; */
+  /* display: flex; */
+  margin-top: 20px;
+  margin: auto;
+  height: 18rem;
+  width: 80%;
+
+  align-items: center;
+  text-align: center;
+  background: rgb(205, 217, 240);
+}
+
+.para {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 20px;
+}
+h6 {
+  font-size: 20px;
+  color: black;
+}
+p {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: bold;
+  /* font-size: 20px; */
+  color: rgb(75, 72, 72);
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetTHEpet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;300&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    
+    <div class="header">
+      <section class="section1" id="section1">
+        <img class="logo" src="petLogo1.png" alt="" />
+        <nav class="navBar navBar-hidden">
+          <ul>
+            <a href="#"> <li>Home</li></a>
+            <a href="#dogsBreed"> <li>Breed</li></a>
+            <a href="#services"> <li>Services</li></a>
+            <!-- <a href="#"> <li>Adopt</li></a> -->
+            <a href="#tempAdopt"><li>Temporary Adopt</li></a>
+            <a href="#testimonials"><li>Testimonials</li></a>
+            <a href="#aboutUs"><li>About Us</li></a>
+          </ul>
+        </nav>
+        <img
+          class="hamburgerButton"
+          src="https://mpng.subpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg"
+          alt=""
+        />
+        
+      </section>
+    </div>
+  <!-- </div> -->
+    <div class="breedContainer section ">
+      <section class="breeds" id="dogsBreed">
+        <h2>DogsBreed</h2>
+        <div class="breedDescription">
+          
+          <div class="breedoptions" id="breedOptions">
+            <select id="breedList">
+             
+            </select>
+          </div>
+          <div class="breedContent">
+            <div class="breedTemplate" id="breedTemplate">
+            <h3>Choose the name of the breed for the image to be displayed!!</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="services section" id="services">
+      <h2>Services</h2>
+     
+      <section class="service " >
+        <div class="serviceProvided">
+          <div class="services service1">
+            <div class="serviceDescription">
+              <h3>Behavioral Consultation & Counseling</h3>
+              <p>
+                We here prides itself on its behavior services department. While
+                we all utilize behavior modification techniques, we specialize
+                in trauma-informed mental health treatment as we look beyond the
+                behaviors to truly understand the individual and support them.
+              </p>
+            </div>
+          </div>
+          <div class="services service2">
+            <div class="serviceDescription">
+              <h3>Animal Assisted Therapy</h3>
+              <p>
+                We hereprovides trauma-informed, evidenced based practices
+                utilizing animals as a piece of our counseling interventions to
+                support the health and wellness of our clients.
+              </p>
+            </div>
+          </div>
+          <div class="services service3">
+            <div class="serviceDescription">
+              <h3>Supported Employment</h3>
+              <p>
+                We here provides supported employment services which are
+                individualized for our clients and their specific needs. Supported
+                employment is comprised of 3 different programs: Job Readiness,
+                Job Development and Job coaching to meet our clients
+              </p>
+          </div>
+          </div>
+          <div class="services service4">
+            <div class="serviceDescription">
+            <h3>
+            Specialized Day Habilitation </h3>
+            <p>
+              An onsite program four days/week is provided on site so trainers/participants may teach the dogs the necessary skills in the specialized day habilitation program. Our goal is for each participant to attain his/her/their maximum functional level or to be supported in a way allowing him/her/them to gain an increased level of self-sufficiency.
+            </p>
+        </div>
+        </div>
+      </section>
+    </div>
+      <!-- dogs fact bos -->
+
+ <div class="dogsFact section">
+  <div class="facts" id="randomFact">
+
+  </div>
+</div>
+<!-- 
+      <!-- Adoption -->
+    <!-- </div>
+    <div class="adoption">
+      <section class="adopt">
+        <div class="adoptingDog">
+          <div class="imagedog">
+          </div>
+          <div class="imageDesc">
+
+          </div>
+        </div>
+      </section>
+    </div> --> 
+
+
+    
+
+    <!-- temporary adopt -->
+    <!-- <div class="container--fluid"> -->
+    <div class="tempAdopt section" id="tempAdopt">
+      <h2>Interim Adoption</h2>
+      <section class="tempAdoption">
+        <div class="tempimage" id="tempimage">
+          </div>
+
+        <div class="form">
+          <form action="random.php">
+            <h3>Wanna Adopt doggiee for temporary period?</h3>
+            <input type="text" placeholder="Doggie's caretaker" class="inputField">
+            <input type="number" placeholder="Age" class="inputField">
+            <h4>Have prior experience with pets?</h4>
+            <input type="radio" class="inputField" value="Yes">
+            <label for="Yes" >Yes</label>
+            <input type="radio" class="inputField" value="No">
+            <label for="No" >No</label>
+            <br>
+            
+            <input type="number" placeholder="Duration of Interim Adoption " class="inputFieldNumber">
+            <input type="number" placeholder="Contact details" class="inputField">
+           
+            <textarea name="" id="" cols="22.9" rows="3" placeholder="Address" class="inputField"></textarea>
+            <BUtton id="btn">Submit</BUtton>
+          </form>
+        </div>
+        <div class="form2">
+          <div class="form">
+            <form action="">
+              <h3>Finding someone for your doggie?</h3>
+              <input type="text" placeholder="Enter your name" class="inputField">
+              <input type="number" placeholder="Pet's Age" class="inputField">
+              <input type="text" placeholder="Breed Name" class="inputField">
+              
+              
+              
+              <input type="number" placeholder="Duration Of Interim Proffering" class="inputFieldNumber">
+              <input type="text" placeholder="Reason of Proffering" class="inputField">
+              <input type="number" placeholder="Contact details" class="inputField">
+             
+              <textarea name="" id="" cols="22.9" rows="3" placeholder="Address" class="inputField"></textarea>
+              <BUtton id="btn">Submit</BUtton>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  <!-- </div> -->
+
+    <div class="testimonials section" id="testimonials" >
+      <h2>Testimonials</h2>
+      <section class="experience">
+        <div class="userExperience">
+          <div class="testimonial1">
+            <img src="https://images.generated.photos/JsB73yfLFTg5b_Mmce5pe_9KTWtuPA7BFtQHl1gwgiE/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTE1NzY5LmpwZw.jpg" alt="">
+          </div>
+            <div class="imgContent"><h5> i loved their service . the quality of breed and services they provide isnt good
+               </h5></div>
+          
+        </div>
+
+        <div class="userExperience">
+          <div class="testimonial1">
+            <img src="https://images.generated.photos/qD4SghNsnscUHz9FUmKJNySxavi5sdF6_W7K626eFO0/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM1MTc2LmpwZw.jpg" alt="">
+          </div>
+            <div class="imgContent"><h5> i loved their service . the quality of breed and services they provide isnt good
+               </h5></div>
+          
+        </div>
+
+        <div class="userExperience">
+          <div class="testimonial1">
+            <img src="https://imgproxy.generated.photos/P0VQrvlyguv_IFSd-gnaeLOVh6HiDDb7awLndWtNPF8/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy90cmFu/c3BhcmVudF92My92/M18wMDcyMTg0LnBu/Zw.png" alt="">
+          </div>
+            <div class="imgContent"><h5> i loved their service . the quality of breed and services they provide isnt good
+               </h5></div>
+          
+        </div>
+      </section>
+    </div>
+
+    <div class="about section" id="aboutUs">
+      <section class="site-details">
+        <div class="aboutUs">
+          <h3>GetYourDog</h3>
+          <p class="para">GetYourDog believes in providing quality dogs breeds. We focus on buying and convincing people to adopt street dogs for society's betterment <br>
+           we aim to provide high quality services to our clients. <br> we provide platform to join dog parents and dog lovers for short TimePeriod so that if some unexpected conition comes we can got your pet covered</p>
+ <h6>For more details contact Us at 5645646132 or mail us @GetYOURdog</h6>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
